@@ -1,17 +1,18 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Layout from '../containers/Layout';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import '../styles/global.css';
 //Routes
-import Login from "../pages/Login";
-import Home from  '../pages/Home';
+import Layout from '../containers/Layout';
+import Home from '../pages/Home';
+import Login from '../pages/Login';
+import PasswordRecovery from '../pages/PasswordRecovery';
 import SendEmail from '../pages/SendEmail';
-import NewPassword from './pages/NewPassword'
-import RecoveryPassword from '../containers/RecoveryPassword';
-
-
-
-import NotFound from  '../pages/NotFound';
-import RecoveryPassword from "../containers/RecoveryPassword";
+import NewPassword from '../pages/NewPassword';
+import MyAccount from '../pages/MyAccount';
+import CreateAccount from '../pages/CreateAccount';
+import Checkout from '../pages/Checkout';
+import Orders from '../pages/Orders';
+import NotFound from '../pages/NotFound';
 
 function App() {
 	return (
@@ -20,7 +21,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home/>}></Route>
 					<Route path="/login" element={<Login/>}></Route>
-					<Route path="/recovery-password" element={<RecoveryPassword/>}></Route>
+					<Route path="/password-recovery" element={<PasswordRecovery/>}></Route>
 					<Route path="/send-email" element={<SendEmail/>}></Route>
 					<Route path="/new-password" element={<NewPassword/>}></Route>
 					<Route path="/account" element={<MyAccount/>}></Route>
