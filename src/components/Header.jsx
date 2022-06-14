@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '@styles/Header.css';
+import '@styles/Header.scss';
 import Menu from '@components/Menu';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
